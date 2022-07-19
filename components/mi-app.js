@@ -1,4 +1,4 @@
-import { LitElement, html ,css} from 'lit';
+import { LitElement, html, css } from 'lit';
 
 export class MiApp extends LitElement {
 
@@ -7,9 +7,21 @@ export class MiApp extends LitElement {
         display: block;
     }
     `;
+    static get properties() {
+        return {
+            nombre: { type: String }
+        };
+    }
+
+    constructor() {
+        super();
+        this.nombre = 'Ramon'
+
+
+    }
 
     render() {
-        return html`hi`;
+        return html`hi ${this.nombre}`;
     }
 }
 customElements.define('mi-app', MiApp);
