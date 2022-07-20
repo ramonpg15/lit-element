@@ -26,7 +26,8 @@ export class MiApp extends LitElement {
 
     render() {
         return html`hi ${this.nombre}
-<button @click="{this.aumentarContador}">Click me!!</button>
+<button @click="${this.aumentarContador}">Click me!!</button>
+<p>Cantidad de clicks dados al momento: ${this.contador}</p>
         `
             ;
     }
