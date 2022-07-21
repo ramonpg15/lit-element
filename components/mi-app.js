@@ -6,6 +6,12 @@ export class MiApp extends LitElement {
     :host {
         display: block;
     }
+    p{
+        font-size:2rem
+    }
+    button{
+        background-color:red
+    }
     `;
     static get properties() {
         return {
